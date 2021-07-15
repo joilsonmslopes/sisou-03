@@ -1,0 +1,100 @@
+.header-img {
+    width: 100%;
+    height: auto;
+    background-image: url(../imgs/bg.png);
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+header.header-img.termos,
+header.header-img.politicas {
+    overflow: hidden;
+}
+
+/* politicas de privacidade */
+
+.custom-container-politicas{
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+.custom-container-politicas h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+#politicas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 2%;
+}
+
+#politicas h2{
+    color: #EB00FF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.politicas + .politicas {
+    margin-top: 60px;
+}
+
+.politicas ol {
+    font-size: 18px;
+}
+
+/* Termos */
+
+#termos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 2%;
+}
+
+h1.termos-title {
+    text-transform: uppercase;
+    font-size: 42px;
+    color: #FFF;
+}
+
+.termos + .termos {
+    margin-top: 60px;
+}
+
+.termos ol {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.termos ol li span {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#termos h2 {
+    font-family: 'Roboto';
+    color: #EB00FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom:20px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    text-align: center;
+    padding: 40px 2%;
+}
+
+.footer p{
+    color: #fff;
+    
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
