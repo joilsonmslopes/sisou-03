@@ -509,7 +509,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 40px 120px;
+  padding: 30px 80px 120px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -531,6 +531,12 @@ main {
 #moduleBenefits .content-text {
   width: 100%;
   margin: 30px auto 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBenefits .content-text {
+    margin: 30px auto 40px;
+  }
 }
 
 #moduleBenefits .content-text .wrapper {
