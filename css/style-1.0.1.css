@@ -235,6 +235,7 @@ html {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding: 0 2%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -258,8 +259,8 @@ html {
 
 #moduleBanner .content-img .img-wrapper img {
   width: 100%;
-  -webkit-transform: translate(100px, 90px);
-          transform: translate(100px, 90px);
+  -webkit-transform: translate(90px, 90px);
+          transform: translate(90px, 90px);
 }
 
 @media only screen and (max-width: 992px) {
