@@ -34,12 +34,12 @@ html {
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
-  color: #141D44;
-  background: #FCFC88;
+  color: #043464;
+  background: #F9B04D;
   padding: 10px 30px;
   border-radius: 20px;
   display: table;
-  border: 2px solid #FCFC88;
+  border: 2px solid #F9B04D;
   -webkit-transition: -webkit-filter 0.2s;
   transition: -webkit-filter 0.2s;
   transition: filter 0.2s;
@@ -66,9 +66,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -113,6 +110,12 @@ html {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 992px) {
+  #moduleBanner .content-text > div {
+    width: 80px;
+  }
+}
+
 #moduleBanner .content-text > div img {
   width: 100%;
 }
@@ -127,11 +130,11 @@ html {
 }
 
 #moduleBanner .content-text h2 {
-  font-size: 25px;
-  line-height: 30.48px;
+  font-size: 30px;
+  line-height: 36.57px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
-  color: #86C2B8;
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 992px) {
@@ -158,17 +161,17 @@ html {
 
 #moduleBanner .content-text h1 {
   font-size: 56px;
-  line-height: 68.26px;
-  font-weight: 400;
-  color: #FFFFFF;
+  line-height: 54.5px;
+  font-weight: 700;
+  color: #F9B04D;
   font-family: 'Montserrat', sans-serif;
   margin-top: 25px;
 }
 
 @media only screen and (max-width: 992px) {
   #moduleBanner .content-text h1 {
-    font-size: 48px;
-    line-height: 58.48px;
+    font-size: 40px;
+    line-height: 46.48px;
   }
 }
 
@@ -195,15 +198,21 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   line-height: 36.57px;
-  font-weight: 700;
+  font-weight: 400;
   color: #FFFFFF;
   margin-top: 35px;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 992px) {
   #moduleBanner .content-text p {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 30.48px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBanner .content-text p {
     text-align: center;
   }
 }
@@ -223,7 +232,17 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBanner .content-img {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media only screen and (max-width: 769px) {
@@ -235,19 +254,41 @@ html {
 
 #moduleBanner .content-img .img-wrapper {
   width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 #moduleBanner .content-img .img-wrapper img {
   width: 100%;
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  -webkit-transform: translate(100px, 90px);
+          transform: translate(100px, 90px);
+}
+
+@media only screen and (max-width: 992px) {
+  #moduleBanner .content-img .img-wrapper img {
+    width: 110%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBanner .content-img .img-wrapper img {
+    width: 100%;
+    -webkit-transform: translate(0, 80px);
+            transform: translate(0, 80px);
+    margin-top: -80px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #moduleBanner .content-img .img-wrapper img {
+    width: 100%;
+    -webkit-transform: translate(0, 55px);
+            transform: translate(0, 55px);
+  }
 }
 
 #moduleBanner.obrigado .container {
-  padding: 80px;
+  padding: 40px;
+  position: relative;
+  min-height: 60vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -259,14 +300,81 @@ html {
 @media only screen and (max-width: 576px) {
   #moduleBanner.obrigado .container {
     padding: 40px 5%;
+    min-height: 40vh;
   }
 }
 
 #moduleBanner.obrigado .content-text {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBanner.obrigado .content-text {
+    width: 100%;
+  }
+}
+
+#moduleBanner.obrigado .content-img.obrigado {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBanner.obrigado .content-img.obrigado {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #moduleBanner.obrigado .content-img.obrigado {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+#moduleBanner.obrigado .content-img.obrigado .img-wrapper {
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+}
+
+#moduleBanner.obrigado .content-img.obrigado .img-wrapper img {
+  width: 600px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  position: absolute;
+  bottom: -55px;
+  right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  #moduleBanner.obrigado .content-img.obrigado .img-wrapper img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBanner.obrigado .content-img.obrigado .img-wrapper img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #moduleBanner.obrigado .content-img.obrigado .img-wrapper img {
+    width: 100%;
+    -webkit-transform: translate(0, 55px);
+            transform: translate(0, 55px);
+  }
 }
 
 #moduleObrigado .container {
@@ -289,7 +397,6 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   padding: 100px 0;
-  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -308,7 +415,7 @@ html {
   font-size: 40px;
   line-height: 48.76px;
   font-weight: 700;
-  color: #141D44;
+  color: #8B264F;
 }
 
 @media only screen and (max-width: 768px) {
@@ -368,7 +475,7 @@ html {
 }
 
 #moduleBenefits {
-  width: 60%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -391,7 +498,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 40px;
+  padding: 30px 40px 120px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -422,23 +529,27 @@ html {
 
 #moduleBenefits .content-text .wrapper h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 400;
-  line-height: 67.05px;
-  color: #141D44;
+  line-height: 48.05px;
+  color: #043464;
 }
 
-@media only screen and (max-width: 1024px) {
+#moduleBenefits .content-text .wrapper h2.title2 {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 992px) {
   #moduleBenefits .content-text .wrapper h2 {
-    font-size: 45px;
-    line-height: 62.05px;
+    font-size: 35px;
+    line-height: 42.05px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   #moduleBenefits .content-text .wrapper h2 {
-    font-size: 38px;
-    line-height: 52.05px;
+    font-size: 32px;
+    line-height: 38.05px;
   }
 }
 
@@ -458,29 +569,61 @@ html {
   font-size: 26px;
   font-weight: 400;
   line-height: 34px;
-  color: #141D44;
-  margin-top: 36px;
+  color: #043464;
+  margin-top: 40px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
   #moduleBenefits .content-text .wrapper p {
-    font-size: 26px;
-    line-height: 38.05px;
-    margin-top: 40px;
+    font-size: 22px;
+    line-height: 28.05px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   #moduleBenefits .content-text .wrapper p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32.05px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   #moduleBenefits .content-text .wrapper p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26.05px;
+  }
+}
+
+#moduleBenefits .content-text .wrapper .list-items {
+  margin-left: 24px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  #moduleBenefits .content-text .wrapper .list-items {
+    margin-left: 20px;
+  }
+}
+
+#moduleBenefits .content-text .wrapper .list-items li {
+  font-size: 20px;
+  font-weight: 700;
+  color: #484848;
+}
+
+#moduleBenefits .content-text .wrapper .list-items li + li {
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+  #moduleBenefits .content-text .wrapper .list-items li {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleBenefits .content-text .wrapper .list-items li {
+    font-size: 16px;
   }
 }
 
@@ -560,7 +703,7 @@ html {
   font-size: 25px;
   font-weight: 700;
   line-height: 30.48px;
-  color: #141D44;
+  color: #043464;
   position: relative;
   padding: 0px 2% 0px 0px;
 }
@@ -583,13 +726,15 @@ html {
 }
 
 #moduleFeature {
-  background-color: #141D44;
-  width: 35%;
+  background-color: #8B264F;
+  width: 45%;
+  max-width: 600px;
 }
 
 @media only screen and (max-width: 768px) {
   #moduleFeature {
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -740,9 +885,9 @@ html {
 
 #moduleFeature .content-text h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 36.57px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42.57px;
   text-align: center;
   color: #ffffff;
 }
@@ -767,10 +912,14 @@ html {
 
 #moduleFooter {
   width: 100%;
-  background: url("../imgs/bgFoooter.png");
-  background-size: 100% 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-color: #043464;
+  margin-top: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  #moduleFooter {
+    margin-top: 0px;
+  }
 }
 
 #moduleFooter .container {
@@ -795,7 +944,7 @@ html {
   }
 }
 
-#moduleFooter .content-text {
+#moduleFooter .content-img {
   max-width: 1100px;
   margin: 0 auto;
   display: -webkit-box;
@@ -810,7 +959,7 @@ html {
           align-items: center;
 }
 
-#moduleFooter .content-text h2 {
+#moduleFooter .content-img h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -819,7 +968,7 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-  #moduleFooter .content-text h2 {
+  #moduleFooter .content-img h2 {
     text-align: center;
     font-size: 26px;
     line-height: 32.57px;
@@ -827,17 +976,17 @@ html {
 }
 
 @media only screen and (max-width: 576px) {
-  #moduleFooter .content-text h2 {
+  #moduleFooter .content-img h2 {
     font-size: 18px;
     line-height: 24.57px;
   }
 }
 
-#moduleFooter .content-text h2 > span {
+#moduleFooter .content-img h2 > span {
   font-weight: 700;
 }
 
-#moduleFooter .content-text a.btn {
+#moduleFooter .content-img a.btn {
   margin-top: 45px;
   max-width: 460px;
   display: -webkit-box;
@@ -852,20 +1001,20 @@ html {
 }
 
 @media only screen and (max-width: 1024px) {
-  #moduleFooter .content-text a.btn {
+  #moduleFooter .content-img a.btn {
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #moduleFooter .content-text a.btn {
+  #moduleFooter .content-img a.btn {
     font-size: 20px;
     line-height: 28.48px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  #moduleFooter .content-text a.btn {
+  #moduleFooter .content-img a.btn {
     font-size: 15px;
     line-height: 24.48px;
     padding: 10px 16px;
